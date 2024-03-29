@@ -19,6 +19,6 @@ ec2.create_tags(
 time.sleep(30)
 response = ec2.terminate_instances(InstanceIds=[instance_id])
 state = response['TerminatingInstances'][0]['CurrentState']['Name']
-print(f"Instance " + instance_id + " is now " + state)
+
 
 
